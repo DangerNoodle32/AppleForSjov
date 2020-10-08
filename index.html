@@ -1,0 +1,119 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<div class="container-fluid bg-primary">
+
+    <nav class="navbar navbar-expand-lg p-0 w-100">
+
+        <svg style="border: none; font-size: 50px;" type="button" data-toggle="collapse"
+             data-target="#navbarcontent"
+             width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list navbar-toggler" fill="white"
+             xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                  d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+
+        <div class="collapse navbar-collapse w-100" id="navbarcontent">
+
+            <div class="navbar-nav ml-auto order-lg-2 d-lg-flex justify-content-lg-between w-100">
+
+                <div class="nav-item order-lg-2">
+                    <a href="#" class="nav-link text-light">Mac</a>
+                </div>
+                <div class="nav-item order-lg-3">
+                    <a href="#" class="nav-link text-light">iPad</a>
+                </div>
+                <div class="nav-item order-lg-4">
+                    <a href="#" class="nav-link text-light">iPhone</a>
+                </div>
+                <div class="nav-item order-lg-5">
+                    <a href="#" class="nav-link text-light">Watch</a>
+                </div>
+                <div class="nav-item order-lg-6">
+                    <a href="#" class="nav-link text-light">TV</a>
+                </div>
+                <div class="nav-item order-lg-7">
+                    <a href="#" class="nav-link text-light">Music</a>
+                </div>
+                <div class="nav-item order-lg-8">
+                    <a href="#" class="nav-link text-light">Support</a>
+                </div>
+                <div class="order-lg-1">
+
+                    <img src="https://img.icons8.com/fluent-systems-regular/24/000000/mac-os.png"/>
+
+                </div>
+
+                <div class="order-lg-9">
+
+                    <img src="https://img.icons8.com/windows/32/000000/add-to-shopping-basket.png"/>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="order-lg-1 d-lg-none">
+
+            <img src="https://img.icons8.com/fluent-systems-regular/24/000000/mac-os.png"/>
+
+        </div>
+
+        <div class="order-lg-3 d-lg-none">
+
+            <img src="https://img.icons8.com/windows/32/000000/add-to-shopping-basket.png"/>
+
+        </div>
+
+    </nav>
+
+</div>
+
+<div class="container text-center">
+
+    <p><span><a href="#">Køb online</a> </span>og få gratis, kontaktfri levering, hjælp fra vores eksperter og meget mere.</p>
+
+</div>
+
+<!-- Her skal sidens indhold ligge -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    $(function () {
+
+    });
+
+</script>
+
+</body>
+</html>
